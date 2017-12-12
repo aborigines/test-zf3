@@ -1,1 +1,12 @@
-test
+<h2>Results</h2>
+
+<?php foreach ($this->datas as $key => $value) : ?>
+<h3>
+<?php
+	echo $value;
+	echo '<br />';
+?>
+</h3>
+<?php endforeach; ?>
+
+<a href="/test/clear-cache">clear cache</a>

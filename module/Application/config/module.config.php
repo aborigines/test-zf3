@@ -33,7 +33,17 @@ return [
                         'action'     => 'index',
                     ],
                 ],
-            ],            
+            ],
+            'test/clear-cache' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/test/clear-cache',
+                    'defaults' => [
+                        'controller' => Controller\TestController::class,
+                        'action'     => 'clearCache',
+                    ],
+                ],
+            ],                       
             'application' => [
                 'type'    => Segment::class,
                 'options' => [
